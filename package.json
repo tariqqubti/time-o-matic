@@ -1,0 +1,24 @@
+{
+  "name": "timely",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tariqqubti/timely"
+  },
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "keywords": [
+    "Date",
+    "Time",
+    "Duration"
+  ],
+  "author": "Tariq Qubti <tariq.qubti@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
