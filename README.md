@@ -1,4 +1,4 @@
-# Timely
+# Time-O-Matic
 
 Helper class to deal with time in JavaScript
 
