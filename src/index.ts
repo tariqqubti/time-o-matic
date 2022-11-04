@@ -1,3 +1,5 @@
+import { Either, Left, Right } from "eitherly"
+
 export class Time {
   readonly kind = 'Time'
 
@@ -9,6 +11,12 @@ export class Time {
 
   static fromMilliseconds(milliseconds: number): Time {
     return new Time(new Date(milliseconds))
+  }
+
+  static fromString(s: string): Either<string, Time> {
+    const date = new Date(s)
+    if(isNaN(date.getTime())) return new Left('Invalid date')
+    return new Right(new Time(date))
   }
 
   static fromIso(iso: string): Time {
